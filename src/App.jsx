@@ -1,7 +1,8 @@
-import React, { Component } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./App.css";
 import BMICalculator from "./pages/BMICalculator";
+import CicilanBank from "./pages/CicilanBank";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 export default function App() {
@@ -10,8 +11,9 @@ export default function App() {
       <Routes>
         {/* <Route path="/alert" element={<AlertPage />} /> */}
 
-        <Route path="/" element={<h1>Ini adalah halaman home</h1>} />
+        <Route path="/" element={<h1>Twiska kalkulator react</h1>} />
         <Route path="/bmi" element={<BMICalculator />} />
+        <Route path="/cicilan" element={<CicilanBank />} />
       </Routes>
     </BrowserRouter>
   );
